@@ -6,8 +6,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
   </head>
+  <style>
+    .timer {
+      display: flex;
+    }
+    .value {
+      margin: 10px;
+    }
+  </style>
   <body>
-    <h1>Hello World</h1>
-    <script src="./app.js"></script>
+    <div class="timer" id="timer-1">
+      <div class="field">
+        <span class="value" data-value="days"></span>
+        <span class="label">Days</span>
+      </div>
+
+      <div class="field">
+        <span class="value" data-value="hours"></span>
+        <span class="label">Hours</span>
+      </div>
+
+      <div class="field">
+        <span class="value" data-value="mins"></span>
+        <span class="label">Minutes</span>
+      </div>
+
+      <div class="field">
+        <span class="value" data-value="secs"></span>
+        <span class="label">Seconds</span>
+      </div>
+    </div>
+    <script src="./app.js" type="module"></script>
   </body>
 </html>
